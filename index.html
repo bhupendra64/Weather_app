@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="">
+   <div class=" flex flex-col items-center"  >
+  <form  class=" flex flex-col items-center">
+    <label class="relative block">
+        <span class="sr-only">Search</span>
+        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+          <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"><!-- ... --></svg>
+        </span>
+        <input class="inpcity placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search City..." type="text" id="input" required name="search"/>
+       
+      </label>
+       <input type="submit" value="submit"  id="btn" class="rounded-md bg-indigo-500  ">
+  </form>
+   </div>
+
+  <div class="container">
+    <h1>Weather App</h1>
+    <div class="container__inner">
+    
+      <section class="weatherCard rainy">
+        <div class="title__container">
+          <div class="weatherIcon"><img></div>
+          <div>
+            
+            <div class="city">São Paulo</div>
+          </div>
+        </div>
+        <div class="main">
+          <div class="temperature">
+            <b  class="temperature__max">18ºC</b>
+         
+          </div>
+          <!-- <div class="forecast">Thunderstorm</div> -->
+        </div>
+        <div class="info__container">
+          <div class="info pressure">
+            <div class="info__title">Humidity</div>
+            <div class="info__value">90%</div>
+          </div>
+          <div class="info visibility">
+            <div class="info__title">Wind</div>
+            <div class="info__value info__value1">100%</div>
+          </div>
+          <div class="info rain">
+            <div class="info__title">Precipitation</div>
+            <div class="info__value info__value2">80mm</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
