@@ -16,7 +16,7 @@ async function getdata(e) {
  
 
     let data = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=6c68df8a70f84cc9b6b123635222609&q=${inp.value}&aqi=no`);
+      `https://api.weatherapi.com/v1/current.json?key=6c68df8a70f84cc9b6b123635222609&q=${inp.value}&aqi=no`);
     let res = await data.json();
 
     let err = res.error
